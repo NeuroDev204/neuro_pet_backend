@@ -103,6 +103,20 @@ export const ERROR_MAP: Record<
     status: 500,
     message: "Internal server error"
   },
-
-
+  [ErrorCode.MISSING_REQUIRED_FIELD]: {
+    status: 400,
+    message: "Missing required field"
+  },
+  [ErrorCode.AGE_BE_A_POSITIVE]: {
+    status: 400,
+    message: "Age must be a positive number"
+  },
+  [ErrorCode.INVALID_SPECIES]: {
+    status: 400,
+    message: "Invalid species"
+  },
+  [ErrorCode.INVALID_GENDER]: {
+    status: 400,
+    message: "Invalid gender"
+  }
 };
